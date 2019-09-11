@@ -9,10 +9,10 @@ const logger = winston.createLogger({
   ]
 })
 
-if (NODE_ENV !== 'production') {
+ if (NODE_ENV !== 'production') {
   logger.add(new winston.transports.Console({
     format: winston.format.simple()
   }))
-}
+} 
 
 module.exports = logger
